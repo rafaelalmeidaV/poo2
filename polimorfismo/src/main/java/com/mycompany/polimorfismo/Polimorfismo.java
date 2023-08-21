@@ -29,6 +29,20 @@ public class Polimorfismo {
 
         int n = 2;
         c.exibir((float) n);
+
+        //Overriding
+        Animal a1 = new Animal("Animal", 10);
+        a1.fazendoBarulho();
+        a1.Dormindo();
+
+        Animal a2 = new Cachorro("Cachorro", 10);
+        a2.fazendoBarulho();
+        a2.Dormindo();
+
+        Animal a3 = new Galinha("Galinha", 10);
+        a3.fazendoBarulho();
+        a3.Dormindo();
+
         
     }
 }
