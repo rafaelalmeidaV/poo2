@@ -30,5 +30,12 @@ public class Abstract29_08 {
         carijo.sound();
         carijo.layEgg();
         
+        Animal lolo = new Galinha();
+        
+        lolo.setName("lolo");
+        lolo.setWeight(10);
+        
+        System.out.println("Nome: "+ lolo.getName()+ "\n Peso: "+ lolo.getWeight());
+        
     }   
 }
