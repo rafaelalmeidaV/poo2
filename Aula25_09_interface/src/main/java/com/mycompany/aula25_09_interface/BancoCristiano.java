@@ -8,17 +8,18 @@ package com.mycompany.aula25_09_interface;
  *
  * @author rafap
  */
-public class BancoSakurai implements Banco {
-    private Conta contaBancoSakurai;
+public class BancoCristiano implements Banco{
     
-    public BancoSakurai(){
-        this.contaBancoSakurai = new Conta();
-        this.contaBancoSakurai.setNomeProprietario("Banco Sakurai");
-        this.contaBancoSakurai.setNumero(0);
-        this.contaBancoSakurai.setSaldo(0.00);
+    private Conta contaBancoCristiano;
+    
+    public BancoCristiano(){
+        this.contaBancoCristiano = new Conta();
+        this.contaBancoCristiano.setNomeProprietario("Banco Cristiano");
+        this.contaBancoCristiano.setNumero(0);
+        this.contaBancoCristiano.setSaldo(0.00);
     }
     
-    @Override
+        @Override
     public boolean saque(Conta conta, double valor){
         if (conta.getSaldo() >= valor) {
             double novoValor = conta.getSaldo() - valor;
@@ -43,7 +44,7 @@ public class BancoSakurai implements Banco {
     
     @Override
     public void extrato(Conta conta){
-        System.out.println("\n----------------BANCO SAKURAI------------------");
+        System.out.println("\n--------------BANCO CRISTIANO---------------");
         System.out.println("-> EXTRATO CONTA \n");
         System.out.println("Nome: " + conta.getNomeProprietario());
         System.out.println("Numero " + conta.getNumero());
